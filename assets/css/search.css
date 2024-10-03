@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --text-color: #ddd;
+  --bg-color: rgb(23, 6, 33);
+  --background-img: linear-gradient(rgb(189, 20, 51), rgb(23, 6, 33));
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+#searchContent,
+#searchContentWrapper{
+position: relative;
+width: 100%;
+justify-content: center;
+align-items: center;
+/* height: 100%; */
+margin-right: 3%;
+
+}
+#clear{
+  position: absolute;
+  right: 0;
+  color: var(--text-color);
+  display: none;
+}
+#initialContent {
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+#initialContent h2 {
+  font-size: 2.5em;
+  color: rgb(189, 20, 51);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* Search bar styles */
+#searchBar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 40%;
+  min-width: 12rem;
+  margin: auto;
+  margin : 1rem auto;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 0.3rem;
+  border: none;
+  background-color: transparent;
+  color: #f5f5f5;
+}
+
+#searchInput::placeholder {
+  color: #f5f5f5;
+  opacity: 0.7;
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+#searchBar i {
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#searchBar i:hover {
+  color: #bd3b3b;
+}
+
+#searchItem {
+ 
+  color: white;
+}
+#music-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#music-container h2{
+  text-align: left;
+}
+#tracks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+  width: 90%;
+  margin-bottom: 4rem;
+ 
+}
+
+.TrackCard {
+  display: flex;
+  align-items: center;
+  justify-content: row;
+  gap: 1rem;
+  height: 80px;
+  width: 80%;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  border: 1px solid rgb(70, 70, 70);
+}
+.TrackCard:hover {
+  background-color: rgb(19, 6, 27);
+}
+.TrackCard img {
+  height: 100%;
+  width: 60px;
+}
+
+.songDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.songDetail p {
+  font-size: small;
+  color: #89a3ac;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.songDetail h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-color);
+}
+#backBtn{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: .5rem;
+ color: white;
+  align-items: center;
+}
+#artists-container {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ArtistsCard {
+  display: flex;
+  align-items: center;
+  justify-content: row;
+  gap: 1rem;
+  height: 150px;
+  width: 80%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.ArtistsCard img {
+  border-radius: 100%;
+  height: 80%;
+  width: 120px;
+}
+
+.artistTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.artistTitle img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+ 
+  
+  #initialContent h2 {
+    text-align: center;
+    font-size: 2em;
+    
+    
+  }
+  #initialContent p {
+    text-align: center;
+    font-size: 1em;
+    
+    
+  }
+
+}
+@media screen and (max-width: 480px) {
+
+  #initialContent {
+    padding: 2rem;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+  }
+  
+  #initialContent h2 {
+    text-align: center;
+    font-size: 1.5em;
+    
+    
+  }
+  #initialContent p {
+    text-align: center;
+    font-size: .8em;
+    
+    
+  }
+
+}

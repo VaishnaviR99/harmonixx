@@ -1,0 +1,226 @@
+{
+    "popularAlbums": [
+      {
+        "albumName": "Future Nostalgia",
+        "albumImg": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/400x400cc.jpg",
+        "tracks": [
+          {
+            "trackName": "Don't Start Now",
+            "singerName": "Dua Lipa",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/cf/9c/8ecf9c1a-efdf-8b86-f5a8-545e07d84f17/mzaf_16297031816531992335.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6c/91/7c/6c917c1f-4f5a-bc42-2dec-859ddf023ef0/190295309664.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "Levitating",
+            "singerName": "Dua Lipa",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/50/fb/2a/50fb2a1f-fa8f-fd33-893c-52502dc4573f/mzaf_10500201312501151663.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "Physical",
+            "singerName": "Dua Lipa",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4f/57/ff/4f57ffde-4bd1-dc9e-442c-7a0f743b4244/mzaf_1050012675297617949.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/400x400cc.jpg"
+          }
+        ]
+      },
+      {
+        "albumName": "Positions",
+        "albumImg": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e5/c0/ce/e5c0ce05-4281-dd8e-6a93-86de7cf45621/20UMGIM94964.rgb.jpg/400x400cc.jpg",
+        "tracks": [
+          {
+            "trackName": "Positions",
+            "singerName": "Ariana Grande",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/82/bb/fc82bb8c-a201-e879-7df8-af4d23979480/mzaf_10561971359447246270.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e5/c0/ce/e5c0ce05-4281-dd8e-6a93-86de7cf45621/20UMGIM94964.rgb.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "thank u, next",
+            "singerName": "Ariana Grande",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/17/97/3b/17973b5f-ae9b-374f-a24d-83c9ca9f89f5/mzaf_5476813666014454580.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/06/d3/e406d3d8-2507-e585-c919-60bc5446985c/19UMGIM03689.rgb.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "pov",
+            "singerName": "Ariana Grande",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/f8/a9/fcf8a918-d166-725c-1968-0e027a38fc4b/mzaf_11403264905210433561.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e5/c0/ce/e5c0ce05-4281-dd8e-6a93-86de7cf45621/20UMGIM94964.rgb.jpg/400x400cc.jpg"
+          }
+        ]
+      },
+      {
+        "albumName": "Fearless ",
+        "albumImg": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/d0/1c/c3d01c88-73e7-187e-fd62-e1744de979a6/21UMGIM09915.rgb.jpg/400x400cc.jpg",
+        "tracks": [
+          {
+            "trackName": "Fifteen",
+            "singerName": "Taylor Swift",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/78/21/bc/7821bc36-1e8f-48b6-982a-cc700f243254/mzaf_3073503853399104862.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/d0/1c/c3d01c88-73e7-187e-fd62-e1744de979a6/21UMGIM09915.rgb.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "Love Story",
+            "singerName": "Taylor Swift",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/02/74/0c/02740c34-4c67-8dcb-8536-68b063c4599d/mzaf_7341800005321532361.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/d0/1c/c3d01c88-73e7-187e-fd62-e1744de979a6/21UMGIM09915.rgb.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "You Belong With Me",
+            "singerName": "Taylor Swift",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/f7/b9/6ef7b9a6-51bd-b59e-c63c-fccc00f2883d/mzaf_4094900416070069734.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/86/5f/b9/865fb986-d40a-e65c-2906-3474ea3f4f30/00843930039531.rgb.jpg/400x400cc.jpg"
+
+          }
+        ]
+      },
+      {
+        "albumName": "Unveil by BTS",
+        "albumImg": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/400x400cc.jpg",
+        "tracks": [
+          {
+            "trackName": "Butter",
+            "singerName": "BTS",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/e4/61/a8/e461a83f-ce72-8edf-49aa-17f37bf35599/mzaf_14386997815453548084.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "Dynamite",
+            "singerName": "BTS",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1d/63/5d/1d635d17-1669-2713-bd16-824f7072935f/mzaf_4720570020709972181.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/f3/8f/22f38fb9-1690-326a-d891-7aa946c2b06f/195497623273_Cover.jpg/400x400cc.jpg"
+          },
+          {
+            "trackName": "Permission to Dance",
+            "singerName": "BTS",
+            "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/12/1f/e1/121fe112-ce92-4b09-6483-068330427215/mzaf_13246293671410954063.plus.aac.ep.m4a",
+            "avatar":"https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/28/6c/66286c9f-6bea-4f99-ec15-507b0c95dc04/196006991739_Cover.jpg/400x400cc.jpg"
+
+          }
+        ]
+      }
+
+      
+    ],
+    "playlists": [
+    {
+      "albumName": "Top Songs-Global",
+      "albumImg": "https://wallpapers.com/images/hd/aesthetic-music-dj-sound-mixer-and-headphones-uh3qru3m8ovbmqqx.jpg",
+      "tracks": [
+        {
+          "trackName": "Please Please Please",
+          "singerName": "Sabrina Carpenter",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/6b/15/786b15ad-8958-8019-28e2-a29f1c64f9d4/mzaf_556956257477109936.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f6/97/58/f69758d6-24d8-6e44-be5b-26819921bfc7/24UMGIM61704.rgb.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Espresso",
+          "singerName": "Sabrina Carpenter",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/a5/1a/c8a51a98-786e-d1d2-cfd6-727721b94ba4/mzaf_14697878690275122020.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f6/97/58/f69758d6-24d8-6e44-be5b-26819921bfc7/24UMGIM61704.rgb.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "BIRDS OF A FEATHER",
+          "singerName": "Billie Eilish",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/ff/37/06ff37b5-02b3-af0c-2a75-8d8bb11ce3fc/mzaf_706563222211952879.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Not Like Us",
+          "singerName": "Kendrick Lamar",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/05/e7/df05e74c-c4a1-b6ca-61b0-e2c36df3ebfd/mzaf_8217126226728128596.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/ef/b6/d0efb685-73be-fdee-58c9-be655f4cd4fd/24UMGIM51924.rgb.jpg/400x400cc.jpg"
+        },
+       
+        {
+          "trackName": "Gata Only",
+          "singerName": "FloyyMenor & Cris Mj",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/17/21/8c/17218cc9-83de-cd9a-6efc-141cd28492ca/mzaf_14294917035804339986.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/4e/0f/ca4e0f11-2cbc-7aec-b2e4-53f5fac7cb0e/198309012715-copy-6dfc57c0.png/400x400cc.jpg"
+        },
+        {
+          "trackName": "Beautiful Things",
+          "singerName": "Benson Boone",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/48/a4/6848a498-05bd-6428-908c-d647a5e2c497/mzaf_10670468703874711122.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/c1/9c/a5c19c62-d641-93b4-2800-e74778569f5f/093624852483.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Too Sweet",
+          "singerName": "Hozier",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/89/47/7d89470a-0a88-7096-f714-c0bf13545666/mzaf_13790917912622583721.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/98/80/95/98809581-4a0e-68a6-04de-b72492e35939/196871908191.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "A Bar Song (Tipsy)",
+          "singerName": "Shaboozey ",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/39/f0/2f39f017-bfcc-c6a0-9180-152915906a2f/mzaf_2528149147407948172.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/97/b5/bc/97b5bca2-6238-2421-4f0d-1f7a39d5d9d4/197342550925_cover.jpg/400x400cc.jpg"
+        },
+        
+        {
+          "trackName": "i like the way you kiss me",
+          "singerName": "Artemas",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/64/c3/5864c37e-bcae-0688-f025-8565ea1da2fa/mzaf_16997188397818469912.plus.aac.p.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/1e/ac/b61eaceb-b493-0909-abfe-0930b7e53d9f/810129998306.jpg/400x400cc.jpg"
+        }
+      ]
+    },
+    {
+      "albumName": "Party Song",
+      "albumImg": "https://img.freepik.com/free-photo/3d-music-related-scene_23-2151125076.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1719705600&semt=ais_user",
+      "tracks": [
+        {
+          "trackName": "Hips Don't Lie (feat. Wyclef Jean)",
+          "singerName": "Shakira",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/56/0e/48/560e48c8-6200-fe59-4cdb-dff99af51e82/mzaf_4600158287200440608.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/2a/33/9a/2a339a01-28f3-3ddd-f9e7-30c837f046cc/dj.bvmymfoa.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Old Town Road (feat. Billy Ray Cyrus) [Remix]",
+          "singerName": "Lil Nas X",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/c5/d9/dfc5d936-099d-8c34-3a52-209164115571/mzaf_11676247829724393400.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/07/d4/c3/07d4c33e-b793-d78f-bb1b-52f1e224da88/886447788264.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Closer (feat. Halsey)",
+          "singerName": "The Chainsmokers",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/0b/43/fa/0b43fa3d-9c08-f4dd-de98-756a72d7db01/mzaf_15476902011721181656.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/41/f8/38/41f8380b-9b56-d5d4-31f7-a6411c0c9aaa/886446102054.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Cheap Thrills",
+          "singerName": "Sia",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/45/65/18/45651878-3a79-efeb-ad04-708d4a821a9c/mzaf_16112236696479121717.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/13/27/bc13275c-8b26-802d-771b-d15ae00fb530/mzm.hvpwjsvi.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "STAY",
+          "singerName": "The Kid LAROI & Justin Bieber",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/4f/61/f9/4f61f909-e70b-75ce-f857-a2923855eff0/mzaf_1740297685207725693.plus.aac.p.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a8/3a/22/a83a22f7-af18-7ef6-a7de-74816c532a44/886449475421.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "No Lie (feat. Dua Lipa)",
+          "singerName": "Sean Paul",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/fc/cf/29/fccf29b6-a6ee-a5de-2410-d8df8494216e/mzaf_10965505716434119661.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/30/b8/24/30b824c1-9937-d38a-96e5-f4a660b2d689/18UMGIM35012.rgb.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Peaches (feat. Daniel Caesar & GIVĒON)",
+          "singerName": "Justin Bieber",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/8f/a3/65/8fa365ea-51e6-71af-7afa-835745d139ad/mzaf_4979626867108862672.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f5/7a/9e/f57a9e6a-31c8-0784-dfbd-4a0120bfd4af/21UMGIM17517.rgb.jpg/400x400cc.jpg"
+        },
+        {
+          "trackName": "Eenie Meenie",
+          "singerName": "Sean Kingston & Justin Bieber",
+          "uri": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bb/ce/30/bbce3088-f26c-f5e9-b8af-50344243726e/mzaf_7341124239492520696.plus.aac.ep.m4a",
+          "avatar": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/95/b3/f795b313-0788-da18-36c4-7c30220691a8/mzi.edakdecd.jpg/400x400cc.jpg"
+        }
+        
+      ]
+    }
+    
+  ]
+   
+  }
+  

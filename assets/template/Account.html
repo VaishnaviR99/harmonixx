@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+     <!-- stylesheet -->
+     <link rel="stylesheet" href="../css/account.css" />
+
+     <!-- vendors -->
+ 
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ 
+     <!-- Fonteawesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+     />
+     <!-- GoogleFont -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+       rel="stylesheet"
+     />
+</head>
+<body>
+    <main class="container">
+        <nav id="navbar">
+            <div id="logo" >
+              <i class="fa-solid fa-music"></i>
+              <h1>HarmoniX</h1>
+            </div>
+            <div id="account">
+                <i class="fa-regular fa-circle-user"></i>
+              <p class="loggedUser"></p>
+              
+            </div>
+          </nav>
+        <div class="content-wrapper">
+            <section id="sidebar">
+                <ul>
+                    <li id="userDetailsBtn" class="active">User Details</li>
+                    <li id="editDetailsBtn">Edit Details</li>
+                    <li id="privacySettingsBtn">Privacy Settings</li>
+                    <li id="logoutBtn">Logout</li>
+                </ul>
+            </section>
+            <section id="mainContent">
+                <!-- Main content section -->
+            </section>
+        </div>
+    </main>
+<script type="module" src="../script/account.js"></script>
+</body>
+</html>

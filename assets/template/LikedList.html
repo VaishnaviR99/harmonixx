@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liked Tracks</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/homeTab.css" />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="liked-tracks-container">
+      <h2>Liked Tracks</h2>
+      <div id="liked-tracks">
+        <!-- Liked tracks will be dynamically inserted here -->
+      </div>
+    </div>
+  </body>
+  <!-- <script type="module" src="../script/state.js"></script> -->
+
+  <script type="module">
+    import {
+      playTrack,
+      state,
+      renderQueueDetails,
+      toggleLikedTrack,
+    } from "../script/state.js";
+
+    $(document).ready(function () {
+      function getUserId() {
+        let loggedUser = JSON.parse(
+          localStorage.getItem("harmoniX_loggedInUser")
+        );
+        return loggedUser.id;
+      }
+
+      function loadLikedTracks() {
+        const userId = getUserId();
+        if (!userId) {
+          $("#liked-tracks").html("<p>No user logged in.</p>");
+          return;
+        }
+
+        const likedTracks =
+          JSON.parse(localStorage.getItem("likedTracks")) || {};
+        if (!likedTracks[userId] || likedTracks[userId].length === 0) {
+          $("#liked-tracks").html("<p>No liked tracks found.</p>");
+          return;
+        }
+
+        // Setting up the queue and queueDetails state
+        state.queue = likedTracks[userId].map((track) => track.url);
+        state.queueDetails = likedTracks[userId];
+        state.currentTrackIndex = 0;
+
+        likedTracks[userId].forEach((track, index) => {
+          if (!track) return;
+          const trackCard = `
+        <div class="TrackCard" data-track-index="${index}">
+          <img src="${track.img}" alt="${track.name}">
+          <div class="songDetail">
+            <h4>${track.name}</h4>
+            <p>by ${track.artist}</p>
+          </div>
+          <i class="fa-solid fa-heart heart-icon liked active"></i>
+        </div>
+      `;
+
+          $(".TrackCard").on("click", function () {
+            state.currentTrackIndex = $(this).data("track-index");
+            renderQueueDetails();
+            playTrack(state.queue[state.currentTrackIndex]);
+          });
+
+          const heartIcon = $(".heart-icon");
+
+          heartIcon.on("click", function () {
+            event.stopPropagation();
+            const likedTrackData = {
+              img: track.img,
+              name: track.name,
+              artist: track.artist,
+              url: track.url,
+            };
+            toggleLikedTrack(likedTrackData, userId, this);
+          });
+
+          $("#liked-tracks").append(trackCard);
+        });
+      }
+
+      function toggleLike(likedTrackData, userId, heartIcon) {
+       
+        const likedTracks =
+          JSON.parse(localStorage.getItem("likedTracks")) || {};
+
+        // Check if user's liked tracks exist
+        if (!likedTracks[userId]) {
+          likedTracks[userId] = []; 
+        }
+
+        const trackIndex = likedTracks[userId].findIndex(
+          (track) => track.url === likedTrackData.url
+        );
+
+        // Track found in liked tracks
+        if (trackIndex !== -1) {
+          likedTracks[userId].splice(trackIndex, 1); 
+          heartIcon.classList.remove("fa-solid", "active"); 
+          heartIcon.classList.add("fa-regular"); 
+        } else {
+          likedTracks[userId].push(likedTrackData); 
+          heartIcon.classList.remove("fa-regular"); 
+          heartIcon.classList.add("fa-solid", "active"); 
+        }
+
+        
+        localStorage.setItem("likedTracks", JSON.stringify(likedTracks));
+      }
+
+      loadLikedTracks();
+    });
+  </script>
+</html>

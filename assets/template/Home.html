@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HarmoniX | Home</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <!-- vendors -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div id="logo">
+          <i class="fa-solid fa-music"></i>
+          <h1>HarmoniX</h1>
+        </div>
+        <div id="account">
+          <i class="fa-regular fa-circle-user"></i>
+          <p class="loggedUser"></p>
+          <i class="fa-solid fa-circle-chevron-down"></i>
+        </div>
+      </nav>
+
+      <!-- Content Wrapper -->
+      <div class="content-wrapper">
+        <!-- Sidebar -->
+        <section id="sidebar">
+          <div class="menu-item active" data-target="home">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+          </div>
+          <div class="menu-item" data-target="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search</p>
+          </div>
+          <div class="menu-item" data-target="likedList">
+            <i class="fa-brands fa-gratipay"></i>
+            <p>Liked</p>
+          </div>
+        </section>
+
+        <section id="mainContent"></section>
+
+        <!-- Audio Player Section -->
+        <div class="player">
+          <button id="closeModalButton">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <!-- <div id="album">
+            <img src="" alt="" />
+            <div>
+              <p id="currentTrackName">Track Name</p>
+              <p id="currentTrackArtist">Artist Name</p>
+            </div>
+          </div> -->
+
+          <div id="middle">
+            <div id="audioPlayerContainer">
+              <div id="audioPlayerBtn">
+                <button id="prevButton" class="audio-control">
+                  <i class="fas fa-backward"></i>
+                </button>
+                <button id="playPauseButton" class="audio-control">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button id="nextButton" class="audio-control">
+                  <i class="fas fa-forward"></i>
+                </button>
+              </div>
+              <div id="seekBarContainer">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seekBar" value="0" />
+
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            <audio id="audioPlayer" src=""></audio>
+          </div>
+        </div>
+
+        <!-- Modal for track list -->
+        <div class="modal" id="trackListModal" style="display: none;">
+          <h3 class="modal-title">Now Playing</h3>
+
+          <div class="modal-body" id="playlist-items">
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="../script/player.js"></script>
+    <script type="module" src="../script/state.js"></script>
+   
+    <!-- <script type="module" src="../script/likedList.js"></script> -->
+
+    <script type="module">
+      import { initializeHomeTab } from "../script/home.js";
+      import { state, renderQueueDetails } from "../script/state.js";
+
+      $(() => {
+        let loggedInUser = JSON.parse(
+          localStorage.getItem("harmoniX_loggedInUser")
+        );
+
+        if (loggedInUser) {
+          $(".loggedUser").text(loggedInUser.username);
+        } else {
+          $(".loggedUser").text("Guest");
+        }
+
+        initializeHomeTab();
+
+        // Handle sidebar menu item click
+        $(".menu-item").on("click", function () {
+          var targetContent = $(this).data("target");
+          if (targetContent == "home") {
+            initializeHomeTab();
+          }else if(targetContent == "likedList"){
+            $("#mainContent").load("./LikedList.html");
+
+          } else {
+            $("#mainContent").load("./SearchTab.html");
+          }
+
+          $(".menu-item").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $("#account").click(function () {
+          window.location.href = "../Template/Account.html";
+        });
+
+        // Close track list modal
+        $("#closeModalButton").on("click", function () {
+          $("#trackListModal").slideToggle();
+          $("#closeModalButton i").toggleClass("fa-chevron-up fa-chevron-down");
+        });
+      });
+    </script>
+  </body>
+</html>

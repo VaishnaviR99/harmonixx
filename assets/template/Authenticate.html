@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticate</title>
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="../css/auth.css" />
+
+   <!-- vendors -->
+
+   <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+   <!-- Fonteawesome -->
+   <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+   />
+</head>
+<body class="light-theme">
+    <main id="container">
+        <div class="toggle-buttons">
+          <button id="signup-toggle">Signup</button>
+            <button id="login-toggle" class="active">Login</button>
+        </div>
+        <i class="fa-solid fa-music"></i>
+        <div id="loginCont">
+            <form id="loginForm" action="#">
+                <div class="inputField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" placeholder="enter email" id="a-emailInput">
+                </div>
+                <div class="inputField">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="enter password" id="a-passInput">
+                </div>
+                <button type="submit" id="loginBtn">Log In</button>
+            </form>
+        </div>
+        <div id="signupCont">
+            <form id="signupForm" action="#">
+                <div class="inputField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="enter username" id="userInput">
+                </div>
+                <div class="inputField">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="enter email" id="b-emailInput">
+                </div>
+                <div class="inputField">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="enter password" id="b-passInput">
+                </div>
+                <button type="submit" id="signupBtn">Sign Up</button>
+            </form>
+        </div>
+    </main>
+  </body>
+
+  <script type="module" src="../script/auth.js"></script>
+  
+</html>

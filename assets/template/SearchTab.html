@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/search.css" />
+
+    <!-- vendors -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="searchContent">
+      <div id="searchContentWrapper">
+        <div id="searchBar">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search for tracks.. etc"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+       
+        <p id="clear" >X Clear</p>
+        <!-- Search results -->
+        <div id="music-container" class="music-container">
+          <!-- Music items will be dynamically added here -->
+          <div id="initialContent">
+            <h2>Welcome to the HarmoniX Search Page</h2>
+            <p>Explore your favorite tracks and artists. Start by typing in the search bar above.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="artists-container"
+        class="artists-container"
+        style="display: none"
+      ></div>
+    </main>
+    <script type="module" src="../script/search.js"></script>
+  </body>
+</html>

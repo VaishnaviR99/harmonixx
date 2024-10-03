@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HarmoniX| Home</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- vendors -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Fonteawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="light-theme">
+    <main>
+      <div id="welcomeBlock">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          
+        </p>
+      </div>
+      <div id="logoBlock">
+        <i class="fa-solid fa-music"></i>
+        <h1>HarmoniX</h1>
+        <p>Play. Pause. Repeat.</p>
+      </div>
+      <button id="singBtn">Sign In</button>
+    </main>
+  </body>
+
+  <script type="module" 
+  >
+$(()=>{
+  let loggedInUser = JSON.parse(localStorage.getItem("harmoniX_loggedInUser"));
+    if(loggedInUser){
+        window.location.href="./assets/template/Home.html";
+    }
+    $("#singBtn").click(function(){
+        window.location.href="./assets/template/Authenticate.html"
+    })
+})
+</script>
+</html>

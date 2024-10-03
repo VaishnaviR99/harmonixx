@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/homeTab.css" />
+
+    <!-- vendors -->
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="homeContent">
+
+      <div class="homeSections" id="topArtistsSection">
+        <div class="title">
+          <h2>Top Artists</h2>
+          <button class="view-all" data-target="#topArtistsSection">View All</button>
+        </div>
+        <div id="artistsTopSong" class="cards-container">
+        
+      </div>
+      
+      <div class="homeSections" id="bollywoodTopArtistsSection">
+        <div class="title">
+          <h2 >Bollywood Top Artists</h2>
+          <button class="view-all" data-target="#bollywoodTopArtistsSection">View All</button>
+        </div>
+         <div id="bTopSong" class="cards-container">
+      </div>
+
+      <div class="homeSections">
+        <div class="title">
+          <h2 >Popular albums</h2>
+        </div>
+        <div id="topAlbums"> </div>
+
+      </div>
+     
+      <div class="homeSections">
+        <div class="title">
+          <h2>Playlists</h2>
+          
+        </div>
+        <div id="playlists"></div> 
+      </div>
+     
+      
+    </main>
+    
+    <section id="trackContainer" style="display: none">
+      <div id="backBtn">
+        <i class="fa-solid fa-chevron-left"></i><p>Back</p>
+      </div>
+      <div id="artistsTrackcontainer" ></div>
+    </section>
+
+    <script type="module" src="../script/home.js"></script>
+    <script type="module" src="../script/utils.js"></script>
+  </body>
+</html>

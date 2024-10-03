@@ -1,0 +1,354 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Root variables */
+:root {
+  --text-color: #ddd;
+  --bg-color: rgb(23, 6, 33);
+  --background-img: linear-gradient(rgb(189, 20, 51), rgb(23, 6, 33));
+  --active-color: #bd1433;
+  --card-bg-color: rgba(255, 255, 255, 0.1);
+  --card-border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Body styles */
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Navbar styles */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-image: var(--background-img);
+  color: var(--text-color);
+
+}
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#logo h1{
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#account {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem;
+ 
+}
+
+
+
+#navbar i {
+  font-size: 1.3rem;
+}
+
+/* Content wrapper styles */
+.content-wrapper {
+  display: flex;
+  
+}
+
+/* Sidebar styles */
+#sidebar {
+  background-color: var(--bg-color);
+  padding: .6rem;
+  border-right: 1px solid white;
+  flex: 0 0 25%;
+  color: white;
+  height: 100vh;
+  
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+#sidebar li {
+  padding: 0.3rem;
+  cursor: pointer;
+  background-image: var(--background-img);
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: border 0.3s ease-in-out;
+  
+}
+
+#sidebar li:hover {
+  border: 1px solid white;
+}
+
+#sidebar li.active {
+  border: 1px solid var(--text-color);
+}
+
+/* Main content styles */
+#mainContent {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ margin-top: 0.5rem;
+  border-left: 1px solid var(--card-border-color);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem;
+  width: 100%;
+ 
+ 
+ 
+}
+#userDetail div{
+  border: 1px dashed rgb(189, 20, 51);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+#userDetail i{
+  font-size: 3rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size:.9rem;
+  color: #f5f5f5;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.card p:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s;
+}
+
+.card p:hover:before {
+  left: 0;
+}
+
+.card p strong {
+  color: var(--active-color);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#editDeatail input{
+  font-size: 1rem;
+}
+#privacySett{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#privacySett i{
+ font-size: .7rem;
+  text-align: center;
+}
+.gif-container{
+  border:  1px dashed rgb(189, 20, 51);;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Input field styles */
+.inputField {
+    margin-bottom: 1.5rem;
+}
+
+.inputField label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+.inputField input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f5f5f5;
+    transition: border-color 0.3s ease;
+}
+
+.inputField input:focus {
+    outline: none;
+    border-color: var(--active-color);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-image: var(--background-img);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ 
+}
+
+
+
+@media  screen and (min-width: 480px) and (max-width: 768px) {
+ /* Navbar styles */
+#navbar {
+
+  padding: 1rem 2rem;
+  
+}
+
+
+
+#navbar i {
+  font-size: 1.5rem;
+}
+
+
+/* Sidebar styles */
+#sidebar {
+  padding: 1rem;
+}
+
+
+
+/* Main content styles */
+#mainContent {
+  padding: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  width: 90%;
+ 
+ 
+ 
+}
+#userDetail div{
+  gap: 1rem;
+  padding: 1rem;
+}
+#userDetail i{
+  font-size: 4rem;
+}
+
+
+.card p {
+  font-size:1rem;
+}
+
+
+#privacySett i{
+ font-size: 1rem;
+}
+.gif-container{
+  width:90%;
+}
+
+
+}
+
+@media  screen and (min-width: 769px) {
+ 
+#navbar {
+
+  padding: 1rem 2rem;
+  
+}
+
+
+/* Sidebar styles */
+#sidebar {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Main content styles */
+#mainContent {
+  padding: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  width: 70%;
+
+ 
+ 
+}
+#userDetail div{
+  gap: 1rem;
+  padding: 1rem;
+}
+#userDetail i{
+  font-size: 5rem;
+}
+
+
+.card p {
+  font-size:1rem;
+}
+
+#privacySett i{
+ font-size: 1rem;
+}
+.gif-container{
+  width:90%;
+  height: 70%;
+}
+
+ 
+}
